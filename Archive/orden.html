@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link
+            href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+            rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/orden.css">
+    
+    <title>RentaAutos | Camionetas</title>
+</head>
+<body>
+    <div id="container">
+        <div class="confirmation-modal">
+                <h2>Gracias por su alquiler!</h2>
+                <p>Visitenos en nuestra Oficina para recoger su auto</p>
+    
+            
+                    
+                    <input type="button" id="buttonConfirmModal" value="Confirmar">
+                
+        </div>
+    </div>
+    <div id="container-error">
+        <div class="confirmation-modal">
+                <h2>Existen errores!</h2>
+                <ul id="list-errores">
+                    
+                </ul>
+    
+                <input type="button" id="buttonConfirmModalError" value="Confirmar">
+                
+        </div>
+    </div>
+    <div class="body-text"><h1>RentaAuto || Información de Pago</h1></div>
+  <form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Información de Pago</h1>
+      </div> <!-- end of personal-information -->
+        
+          <input id="input-field" minlength="16" maxlength="16" type="text" name="number" placeholder="Número de tarjeta"/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+         
+          <div class="card-wrapper"></div>
+      
+          <input id="input-field" type="text" class="identidadUsuario" name="identidad" required="required" autocomplete="on" maxlength="13" placeholder="Identidad" pattern="[0-9]*"/>
+          <input id="column-left" onchange="cambioDias()" type="number" class="dias-cantidad" name="dias" required="required" autocomplete="on" max="7" min="1" placeholder="Dias de alquiler"/>
+          <input id="column-right" class="total-alquiler" type="text" name="total" required="required"  readonly="readonly" maxlength="10" placeholder="Total" />
+          <input id="input-field" type="email" class="emailUsuario" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+          <input id="input-field" type="text" name="Telefono" class="telefonoUsuario" required="required" autocomplete="on" maxlength="8" placeholder="Telefono" pattern="[0-9]*"/>
+          <input id="input-button" type="button" value="Submit"/>
+        
+    </form>
+  </div>
+  <script src="js/pedido.js"></script>
+</body>
+
+</html>

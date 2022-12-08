@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/contactanos.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+    <title>RentaAutos | Contáctanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<form action="mailto:cara_p@unicah.edu" method="post" enctype="text/plain" >
+    <div class="title">
+        <h2>Contacto</h2>
+    </div>
+    <div class="half">
+        <div class="item">
+            <label for="name">Visión
+                <p>Ser la mejor empresa encargada de proporcionar cualquier tipo de carro a cualquier persona.</p>
+            </label>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required="required">
+            <p id="error_nombre">Ingrese correctamente el nombre</p>
+        </div>
+
+    </div>
+    <div class="full">
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" required="required"></textarea>
+        <p id="error_mensaje">Ingrese correctamente el mensaje</p>
+        <div class="map-responsive" style="margin-top: 20px">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.904312199811!2d-88.7854567852087!3d14.774419489691976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6409de7760ae2f%3A0x5c65c63f1ca3b1f5!2sBiblioteca%20UnicahSRL!5e0!3m2!1ses-419!2shn!4v1665464120194!5m2!1ses-419!2shn"
+                    width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <div class="action">
+        <input type="submit" value="Enviar" onclick="validarForm()">
+        <input type="reset" value="Limpiar">
+        <a href="index.html">Regresar</a>
+    </div>
+    <div class="icons">
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-github"></a>
+        <br>
+        <br>
+        <p href="">Número de telefono: +50434444846</p>
+        <p href="">Horario de atenciónn de Lunes a Domingo</p>
+
+
+    </div>
+</form>
+
+</body>
+<script src="js/validarForm.js"></script>
+</html>
