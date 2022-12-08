@@ -6,7 +6,11 @@
   margin-top: -20vh;
 
   @include respond(tab-port) {
-    padding: 20rem 0;
+    padding: -15vh 0;
+  }
+
+  @include respond(phone) {
+    margin-top: -10vh;
   }
 }
 
@@ -70,8 +74,9 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../img/nat-10.jpg);
-  background-size: 100%;
+    url(../img/car-bg.jpg);
+
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
 
@@ -82,7 +87,7 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(../img/nat-10.jpg);
+      url(../img/car-bg.jpg);
     background-size: cover;
   }
 
@@ -92,7 +97,7 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../img/nat-10.jpg);
+      url(../img/car-bg.jpg);
   }
 
   &__form {
